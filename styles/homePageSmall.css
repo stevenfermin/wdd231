@@ -1,0 +1,123 @@
+:root{
+    --main-color: rgb(255,255,255);
+    --secondary-color:rgb(0,0,0);
+    --third-color: rgb(175,175,175);
+    --current-page: rgb(125,125,125);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/********************** HEADER **********************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    color: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+header span {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.hamburger {
+    background: none;
+    border: none;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/********************** NAVIGATION **********************/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+    background-color: var(--third-color);
+}
+
+.navigation ul {
+    text-align: center;
+}
+
+.navigation li {
+    padding: 1rem;
+    border-bottom: solid 1px var(--current-page);
+}
+
+.navigation li.current {
+    background-color: var(--current-page);
+}
+
+.navigation ul li a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+main h1 {
+    margin: 1rem 2rem;
+}
+
+/********************** About Me **********************/
+
+.aboutMe, .photo  {
+    margin: 1rem 2rem;
+    background-color: var(--third-color);
+}
+
+.aboutMe h2, .photo h2, .course h2 {
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}
+
+.course {
+    margin: 1rem 2rem;
+}
+
+.course ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.course li {
+    margin: 0.5rem 0.5rem;
+    padding: 1rem;
+}
+
+.course a {
+    padding: 1rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    background-color: var(--third-color);
+    color: var(--secondary-color);
+    border: solid 1px var(--secondary-color);
+}
+
+.courses li {
+    background-color: var(--third-color);
+    width: 100%;
+    text-align: center;
+    border: solid 0.5px var(--secondary-color);
+}
