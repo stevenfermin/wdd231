@@ -97,7 +97,7 @@ main h1 {
 
 .course ul {
     list-style-type: none;
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
 }
 
