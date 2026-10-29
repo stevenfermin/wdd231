@@ -92,12 +92,14 @@ main h1 {
 }
 
 .course {
+    display: flex;
+    flex-direction: column;
     margin: 1rem 2rem;
 }
 
 .course ul {
     list-style-type: none;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
 }
 
