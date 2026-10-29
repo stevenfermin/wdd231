@@ -90,6 +90,10 @@ main h1 {
     color: var(--main-color);
 }
 
+.photo img {
+    width: 100%;
+}
+
 .course {
     display: flex;
     flex-direction: column;
