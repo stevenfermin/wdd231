@@ -123,3 +123,12 @@ main h1 {
     text-align: center;
     border: solid 0.5px var(--secondary-color);
 }
+
+footer {
+    display: flexbox;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+}
