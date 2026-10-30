@@ -96,6 +96,8 @@ main h1 {
 .aboutMe h2, .photo h2, .course h2 {
     background-color: var(--secondary-color);
     color: var(--main-color);
+    text-align: center;
+    font-size: 1.7rem;
 }
 
 .photo img {
