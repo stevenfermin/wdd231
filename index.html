@@ -6,8 +6,8 @@
     <title>Course Home Page</title>
     <meta name="author" content="Cesar Steven Fermin Cabrera">
     <meta name="description" content="This page is to create a course page where the user can find all the classes for web and programming development">
-    <link rel="stylesheet" href="styles/homepagelarger.css">
     <link rel="stylesheet" href="styles/homepagesmall.css">
+    <link rel="stylesheet" href="styles/homepagelarger.css">
     <script src="scripts/homepage.js" defer></script>
 </head>
 <body>
@@ -20,35 +20,37 @@
         <button id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
-            <ul>
-                <li class="current"><a href="#">Home</a></li>
-                <li><a href="#">Chamber Project</a></li>
-                <li><a href="#">Final Project</a></li>
-            </ul>
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
     </nav>
     <main>
         <h1>Home</h1>
-        <section class="aboutMe">
-            <h2>About Me</h2>
-            <p>This is my biography</p>
-        </section>
-        <section class="photo">
-            <h2>Student Photo</h2>
-            <img src="images/student.png" alt="Student">
-        </section>
-        <section class="course">
-            <h2>Web Certificate Courses</h2>
-            <div>
-                <ul>
-                    <li><a href="#" id="all">All</a></li>
-                    <li><a href="#" id="wdd">WDD</a></li>
-                    <li><a href="#" id="cse">CSE</a></li>
-                </ul>
-            </div>
-            <div id="list">
+        <div class="sections">
+            <section class="aboutMe">
+                <h2>About Me</h2>
+                <p>This is my biography</p>
+            </section>
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/student.png" alt="Student">
+            </section>
+            <section class="course">
+                <h2>Web Certificate Courses</h2>
+                <div class="filters">
+                    <ul>
+                        <li><a href="#" id="all">All</a></li>
+                        <li><a href="#" id="wdd">WDD</a></li>
+                        <li><a href="#" id="cse">CSE</a></li>
+                    </ul>
+                </div>
+                <div id="list">
 
-            </div>
-        </section>
+                </div>
+            </section>
+        </div>
     </main>
     <footer>
         <div class="logos">

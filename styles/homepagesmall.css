@@ -11,7 +11,7 @@
     box-sizing: border-box;
 }
 
-header, main, footer {
+header, nav, main, footer {
     width: 38rem;
     margin: 0 auto;
 }
@@ -63,6 +63,7 @@ header span {
 }
 
 .navigation ul {
+    list-style-type: none;
     text-align: center;
 }
 
@@ -126,15 +127,16 @@ main h1 {
     background-color: var(--third-color);
     color: var(--secondary-color);
     border: solid 1px var(--secondary-color);
+    font-size: 1.7rem;
 }
-
+ /***** JAVASCRIPT CLASS ******/
 .courses li {
     background-color: var(--third-color);
     width: 100%;
     text-align: center;
     border: solid 0.5px var(--secondary-color);
 }
-
+/*----------------------------*/
 .course p {
     text-align: center;
 }
