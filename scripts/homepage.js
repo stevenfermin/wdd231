@@ -78,3 +78,8 @@ function courseList(filteredCourses){
         document.querySelector("#list").append(p)
     });
 }
+
+const sign = document.getElementById("signature")
+sign.innerHTML = `&copy;🌄Cesar Steven Fermin🌄 Dominican Republic`
+
+document.getElementById("lastModified").innerHTML = document.lastModified;

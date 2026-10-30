@@ -10,6 +10,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header, main, footer {
+    width: 38rem;
+    margin: 0 auto;
+}
 /********************** HEADER **********************/
 header {
     display: grid;
@@ -42,6 +47,7 @@ header span {
 
 .hamburger.show::before {
     content: "\00D7";
+    font-size: 2rem;
 }
 
 /********************** NAVIGATION **********************/
@@ -52,7 +58,8 @@ header span {
 
 .navigation.show {
     display: block;
-    background-color: var(--third-color);
+    width: 38rem;
+    background-color: var(--secondary-color);
 }
 
 .navigation ul {
@@ -69,7 +76,7 @@ header span {
 }
 
 .navigation ul li a {
-    color: var(--secondary-color);
+    color: var(--main-color);
     text-decoration: none;
     font-size: 1.2rem;
 }
@@ -104,6 +111,7 @@ main h1 {
     list-style-type: none;
     display: flex;
     flex-direction: row;
+    place-content: center;
 }
 
 .course li {
@@ -127,8 +135,27 @@ main h1 {
     border: solid 0.5px var(--secondary-color);
 }
 
+.course p {
+    text-align: center;
+}
 
-footer img {
+footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.logos {
+    display: flex;
+    place-content: center;
+    gap: 1rem;
+}
+
+.logos img {
     width: 50px;
     height: auto;
+}
+
+.mark {
+    background-color: var(--third-color);
+    text-align: center;
 }
