@@ -80,6 +80,9 @@ function courseList(filteredCourses){
 }
 
 const sign = document.getElementById("signature")
-sign.innerHTML = `&copy;🌄Cesar Steven Fermin🌄 Dominican Republic`
+
+let date = new Date()
+
+sign.innerHTML = `&copy;${date.getFullYear()}🌄Cesar Steven Fermin🌄 Dominican Republic`
 
 document.getElementById("lastModified").innerHTML = document.lastModified;
