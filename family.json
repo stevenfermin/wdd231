@@ -1,0 +1,32 @@
+{
+    "Family": "Fermin",
+    "moveInDate": "06/18/2008",
+    "numberOfMembers": 5,
+    "visitedByBishopric": true,
+    "Members": [{
+        "Name": "Michael",
+        "Gender": "Male",
+        "Birthdate": "05/23/1979"
+    },
+    {
+        "Name": "Maria",
+        "Gender": "Female",
+        "Birthdate": "09/12/1980"
+    },
+    {
+        "Name": "Steven",
+        "Gender": "Male",
+        "Birthdate": "09/10/2004"
+    },
+    {
+        "Name": "Adrian",
+        "Gender": "Male",
+        "Birthdate": "01/14/2010"
+    },
+    {
+        "Name": "Omar",
+        "Gender": "Male",
+        "Birthdate": "07/16/2013"
+    }
+    ]
+}
