@@ -86,3 +86,13 @@ let date = new Date()
 sign.innerHTML = `&copy;${date.getFullYear()}🌄Cesar Steven Fermin🌄 Dominican Republic`
 
 document.getElementById("lastModified").innerHTML = document.lastModified;
+
+
+/*Fetching data*/
+/*async function getData() {
+    const response = await fetch('https://jsonplaceholder.typicode.com/todos/');
+    const data = await response.json();
+    console.log(data);
+}
+
+getData();*/
