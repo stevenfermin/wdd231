@@ -24,6 +24,8 @@ const displayProphets = (prophets) => {
     const fullName = document.createElement('h2'); // fill in the blank
     const portrait = document.createElement('img');
 
+    card.className = "prophet";
+
     // Build the h2 content out to show the prophet's full name
     fullName.textContent = `${prophet.name} ${prophet.lastname}`; // fill in the blank
     // Build the image portrait by setting all the relevant attributes

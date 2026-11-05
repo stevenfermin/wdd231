@@ -1,0 +1,28 @@
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    background-color: #ccc;
+    place-items: center;
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.prophet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #988eac;
+    border: solid 1px #000000;
+    width: 90%;
+    padding-bottom: 1rem;
+    margin: 5px;
+}
+
+.prophet h2, h1 {
+    font-size: 2.7rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #7b3e9b;
+}
