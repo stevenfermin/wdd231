@@ -6,12 +6,13 @@
     <meta name="author" content="Cesar Steven Fermin Cabrera">
     <meta name="description" content="">
 
-    <meta name="og:title">
-    <meta name="og:description">
-    <meta name="og:image">
-    <meta name="og:url">
+    <meta property="og:title" content="TravelDR">
+    <meta property="og:description" content="">
+    <meta property="og:image" content="images/plane.png">
+    <meta property="og:url" content="https://stevenfermin.github.io/wdd231/chamber/directory.html">
 
-    <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/directorysmall.css">
     <link rel="stylesheet" href="styles/directoryLarge.css">
     <script src="scripts/directory.js" defer></script>
     <link rel="shortcut icon" href="images/plane.png">
@@ -19,6 +20,30 @@
     <title>TravelDR</title>
 </head>
 <body>
-    
+    <header>
+        <nav class="navigation">
+            <img src="images/plane.png" alt="Plane logo">
+            <h1>Chamber of commerce</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="#">Busines Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul>
+            <button id="ham-btn" class="hamburger" aria-label="hambtn"></button>
+        </nav>
+    </header>
+    <main>
+        <h1>Directory</h1>
+        <div class="view">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <div id="cards" class="cards grid">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>

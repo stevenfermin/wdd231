@@ -1,0 +1,65 @@
+[
+  {
+    "companyName": "Apex Tech Solutions",
+    "address": "123 Innovation Way, Tech City, UT 84043",
+    "phoneNumber": "(555) 123-4567",
+    "websiteURL": "https://www.apextechsolutions.com",
+    "imageFileName": "apex-tech.jpg",
+    "membershipLevel": 3,
+    "industry": "Software & IT Services"
+  },
+  {
+    "companyName": "Mountain View Café",
+    "address": "456 Pinecrest Blvd, Rexburg, ID 83840",
+    "phoneNumber": "(555) 987-6543",
+    "websiteURL": "https://www.mountainviewcafe.com",
+    "imageFileName": "mountain-cafe.jpg",
+    "membershipLevel": 1,
+    "industry": "Food & Beverage"
+  },
+  {
+    "companyName": "Evergreen Landscaping",
+    "address": "789 Green Valley Rd, Boise, ID 83702",
+    "phoneNumber": "(555) 456-7890",
+    "websiteURL": "https://www.evergreenlandscaping.org",
+    "imageFileName": "evergreen-landscaping.jpg",
+    "membershipLevel": 2,
+    "industry": "Home & Garden Services"
+  },
+  {
+    "companyName": "Pioneer Books & Gifts",
+    "address": "321 Main Street, Provo, UT 84601",
+    "phoneNumber": "(555) 234-5678",
+    "websiteURL": "https://www.pioneerbooks.net",
+    "imageFileName": "pioneer-books.jpg",
+    "membershipLevel": 1,
+    "industry": "Retail & Bookstore"
+  },
+  {
+    "companyName": "Summit Fitness Center",
+    "address": "654 Health Avenue, Logan, UT 84321",
+    "phoneNumber": "(555) 876-5432",
+    "websiteURL": "https://www.summitfitness.io",
+    "imageFileName": "summit-fitness.jpg",
+    "membershipLevel": 3,
+    "industry": "Health & Wellness"
+  },
+  {
+    "companyName": "Valley Auto Repair",
+    "address": "987 Industrial Pkwy, Idaho Falls, ID 83401",
+    "phoneNumber": "(555) 345-6789",
+    "websiteURL": "https://www.valleyautorepair.com",
+    "imageFileName": "valley-auto.jpg",
+    "membershipLevel": 2,
+    "industry": "Automotive Services"
+  },
+  {
+    "companyName": "Blue River Accounting",
+    "address": "159 Finance Blvd, Salt Lake City, UT 84111",
+    "phoneNumber": "(555) 678-9012",
+    "websiteURL": "https://www.blueriveraccounting.com",
+    "imageFileName": "blue-river.jpg",
+    "membershipLevel": 1,
+    "industry": "Financial & Legal Services"
+  }
+]
