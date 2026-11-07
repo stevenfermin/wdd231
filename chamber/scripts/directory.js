@@ -1,4 +1,4 @@
-const memberUrl = 'member.json';
+const memberUrl = 'data/member.json';
 const cards = document.querySelector("#cards")
 
 async function getMembers() {
