@@ -1,16 +1,13 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-
 /****************** Header********************/
 
-
 .navigation {
-    width: 100%;
     display: grid;
     grid-template-columns: 48px auto 44px;
     margin: 1rem;
@@ -19,8 +16,8 @@
     background-color: #ccc;
 }
 
-.navigation h1 {
-    font-size: 1.2rem;
+.navigation label {
+    font-size: 2rem;
 }
 
 .navigation ul {
@@ -81,18 +78,13 @@ main {
     height: 2.5rem;
 }
 
-.card {
-    width: 100%;
-    margin: 0 auto;
-}
-
 /*************************------GRID------**************************/
 .cards.grid{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    margin: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
+    max-width: 1300px;
+    margin: 2rem auto;
     gap: 1rem;
-    place-items: center;
 }
 
 .cards.grid > .card {
