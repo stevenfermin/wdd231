@@ -32,15 +32,15 @@ const displayMembers = (members) =>{
 
         CompanyName.textContent = member.companyName;
         CompanyTag.textContent = member.industry;
-        img.src;
-        img.alt = member.companyName;
+        /*img.src;
+        img.alt = member.companyName;*/
         address.textContent = member.address;
         phone.textContent = member.phoneNumber;
         url.textContent = member.websiteURL;
 
         card.appendChild(CompanyName);
         card.appendChild(CompanyTag);
-        card.appendChild(img);
+        /*card.appendChild(img);*/
         card.appendChild(address);
         card.appendChild(phone);
         card.appendChild(url);
