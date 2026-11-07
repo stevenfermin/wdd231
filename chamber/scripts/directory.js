@@ -33,6 +33,7 @@ const displayMembers = (members) =>{
         CompanyName.textContent = member.companyName;
         CompanyTag.textContent = member.industry;
         img.src;
+        img.alt = member.companyName;
         address.textContent = member.address;
         phone.textContent = member.phoneNumber;
         url.textContent = member.websiteURL;
