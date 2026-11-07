@@ -1,3 +1,8 @@
+:root {
+    --principal-color: rgba(251, 139, 139, 0.845);
+    --secondary-color: rgba(254, 253, 222, 0.8);
+    --current: rgba(247, 146, 84, 0.8);
+}
 
 * {
     margin: 0;
@@ -7,13 +12,14 @@
 
 /****************** Header********************/
 
+
 .navigation {
     display: grid;
     grid-template-columns: 48px auto 44px;
-    margin: 1rem;
     padding: 0 1rem;
     align-items: center;
-    background-color: #ccc;
+    background-color: var(--principal-color);
+    border-bottom: 1px solid #000;
 }
 
 .navigation h1 {
@@ -63,10 +69,39 @@
     font-size: 2rem;
 }
 
+.mobileNav {
+    display: none;
+    background-color: var(--secondary-color);
+}
+
+.mobileNav.show {
+    display: block;
+}
+
+.mobileNav ul {
+    display: block;
+    text-align: center;
+}
+
+.mobileNav li {
+    font-size: 1.4rem;
+    border-bottom: 1px solid #000;
+}
+
+.mobileNav a {
+    text-decoration: none;
+    color: black;
+}
+
+#current {
+    background-color: var(--current);
+}
+
 /****************** Main ********************/
 main {
     padding: 0 1rem;
 }
+
 .view {
     display: flex;
     gap: 5rem;
@@ -76,7 +111,13 @@ main {
 .view button {
     width: 10rem;
     height: 2.5rem;
+    background-color: var(--secondary-color);
 }
+
+.cards {
+    justify-content: center;
+}
+
 
 /*************************------GRID------**************************/
 .cards.grid{
@@ -90,7 +131,7 @@ main {
 .cards.grid > .card {
     width: 100%;
     padding: 1rem;
-    background-color: #ccc;
+    background-color: var(--principal-color);
     border-radius: 25px;
     text-align: center;
 }
@@ -122,13 +163,41 @@ main {
 }
 
 .cards.list > section:nth-of-type(odd).card {
-    background-color: aqua;
+    background-color: var(--principal-color);
     text-align: center;
     padding: 1rem;
 }
 
 .cards.list > section:nth-of-type(even).card {
-    background-color: #ccc;
+    background-color: var(--secondary-color);
     text-align: center;
     padding: 1rem;
+}
+
+
+/*********************FOOTER*************************/
+
+footer {
+    background-color: var(--principal-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+.logos {
+    display: flex;
+    place-content: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.logos img {
+    width: 50px;
+    height: auto;
+}
+
+.mark {
+    text-align: center;
 }

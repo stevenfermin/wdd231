@@ -1,6 +1,7 @@
 const memberUrl = 'data/members.json';
 const cards = document.querySelector("#cards")
 
+
 async function getMembers() {
     try {
         const response = await fetch(memberUrl);
@@ -70,3 +71,28 @@ listBtn.addEventListener("click", () => {
         cards.classList.toggle("list");
     }
 })
+
+
+const hamBtn = document.querySelector("#ham-btn")
+const mobileNav = document.querySelector("#mobileNav")
+
+hamBtn.addEventListener(("click"), () => {
+    mobileNav.classList.toggle("show")
+})
+
+const sign = document.getElementById("signature")
+const Cname = document.getElementById("DName")
+const CAddress = document.getElementById("DAddress")
+const CEmail = document.getElementById("DEmail")
+const CPhone = document.getElementById("DNumber")
+
+Cname.innerHTML = `<strong>ChamberRD Chamber of Commerce</strong>`
+CAddress.innerHTML = `Calle B, San francisco, Distrito Nacional`
+CEmail.innerHTML = `chamberrd@commerce.org`
+CPhone.innerHTML = `1809-809-8098`
+
+let date = new Date()
+
+sign.innerHTML = `&copy;${date.getFullYear()}🌄Cesar Steven Fermin🌄 Dominican Republic`
+
+document.getElementById("lastModified").innerHTML = document.lastModified;
