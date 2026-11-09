@@ -13,11 +13,24 @@
     .navigation {
         display: block;
         width: 90%;
-        background-color: var(--secondary-color);
+        background-color: var(--main-color);
     }
 
     .navigation ul {
         display: flex;
+    }
+    
+    .navigation li {
+        padding: 1rem;
+        border-bottom: 0px;
+    }
+
+    .navigation li.current {
+        background-color: transparent;
+    }
+
+    .navigation li.current a {
+        border-bottom: solid 1px var(--default-font-color);
     }
 
     /********************** MAIN **********************/
