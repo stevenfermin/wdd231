@@ -82,17 +82,13 @@
         background-color: transparent;
         border-color: var(--secondary-color);
         padding: 0.5rem 1rem;
+        color: var(--principal-color);
+        font-size: 1.5rem;
     }
 
     .hero button:hover {
         background-color: var(--button-color);
         border-color: var(--principal-color);
-    }
-
-    .hero-content button a{
-        text-decoration: none;
-        color: var(--principal-color);
-        font-size: 1.5rem;
     }
 
     .events {
