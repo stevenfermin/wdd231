@@ -79,7 +79,7 @@
 
     .hero-content button {
         margin-top: 15%;
-        background-color: transparent;
+        background-color: var(--black);
         border-color: var(--secondary-color);
         padding: 0.5rem 1rem;
         color: var(--principal-color);
