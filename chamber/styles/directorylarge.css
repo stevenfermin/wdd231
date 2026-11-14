@@ -95,6 +95,122 @@
         font-size: 1.5rem;
     }
 
+    .events {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        padding: 1rem 0;
+        background-color: var(--principal-color);
+        margin: 1rem;
+        border-radius: 25px;
+    }
+
+    .events img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .events figcaption {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+
+    .events a {
+        text-decoration: none;
+        font-size: 2rem;
+        color: var(--button-color);
+        border: solid 2px var(--secondary-color);
+        padding: 0.2rem;
+    }
+
+    .events a:hover{
+        background-color: var(--button-color);
+        color: var(--black);
+    }
+
+    .climate {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        background-color: var(--principal-color);
+        border-radius: 25px;
+        margin: 1rem;
+    }
+    
+    .weather {
+        margin: 1rem;
+        padding: 1rem;
+        background-color: var(--button-color);
+    }
+
+    .weather p {
+        font-size: 1.2rem;
+    }
+
+    .weather figcaption {
+        font-size: 1.2rem;
+    }
+
+    .weather img {
+        width: 100%;
+        background-color: var(--principal-color);
+        border-radius: 50px;
+    }
+
+    
+
+    .forecast {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 7rem;
+        background-color: var(--button-color);
+        margin: 1rem;
+        border-radius: 50px;
+    }
+
+    .cast {
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cast img {
+        width: 80%;
+        background-color: var(--principal-color);
+        border-radius: 25px;
+    }
+
+    .cast p {
+        font-size: 1.5rem;
+    }
+
+    .spotlights {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .spot {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: var(--principal-color);
+        padding: 0.5rem;
+        border-radius: 25px;
+        font-size: 1.2rem;
+    }
+
+    .spot img{
+        width: 50%;
+    }
+
+    .spot p{
+        font-weight: bolder;
+    }
+
     /*************************------LIST------**************************/
 
     .cards.list {
@@ -134,6 +250,7 @@
         text-align: center;
         padding: 1rem;
     }
+
 
     footer {
         background-color: var(--principal-color);
