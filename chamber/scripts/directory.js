@@ -223,6 +223,7 @@ const displaySpotlights = (companies) => {
 
         name.textContent = company.companyName;
         logo.src = company.imageFileName;
+        logo.alt = company.name;
         phone.innerHTML = `<strong>Phone:</strong> ${company.phoneNumber}`;
         address.innerHTML = `<strong>Address:</strong> ${company.address}`;
         website.innerHTML = `<strong>Website:</strong> ${company.websiteURL}`;
