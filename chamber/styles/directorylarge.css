@@ -116,7 +116,7 @@
     .events a {
         text-decoration: none;
         font-size: 2rem;
-        color: var(--button-color);
+        color: var(--black);
         border: solid 2px var(--secondary-color);
         padding: 0.2rem;
     }

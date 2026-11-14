@@ -177,6 +177,7 @@ main {
         background-color: var(--principal-color);
         margin: 1rem;
         border-radius: 25px;
+        gap: 1rem;
     }
 
     .events img {
@@ -192,7 +193,7 @@ main {
     .events a {
         text-decoration: none;
         font-size: 2rem;
-        color: var(--button-color);
+        color: var(--black);
         border: solid 2px var(--secondary-color);
         padding: 0.2rem;
     }
