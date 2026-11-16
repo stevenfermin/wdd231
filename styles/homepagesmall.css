@@ -132,7 +132,38 @@ main h1 {
     border: solid 1px var(--secondary-color);
     font-size: 1.7rem;
 }
- /***** JAVASCRIPT CLASS ******/
+
+dialog {
+    margin: auto;
+    border: 1px solid rgb(0 0 0 / 10%);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}
+
+dialog::backdrop {
+  background-color: rgb(0 0 0 / 50%);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid rgb(0 0 0 / 10%);
+}
+
+/***** JAVASCRIPT CLASS ******/
+
+
+#list ul {
+    display: flex;
+    flex-direction: column;
+}
+
 .courses li {
     background-color: var(--main-color);
     width: 100%;
@@ -163,4 +194,12 @@ footer {
 .mark {
     background-color: var(--main-color);
     text-align: center;
+}
+
+#course-details {
+    background-color: var(--main-color);
+}
+
+#course-details::backdrop {
+    background-color: rgb(0,0,0 / 50%);
 }
