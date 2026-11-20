@@ -1,0 +1,31 @@
+input {
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+
+input:required {
+    border-left: solid 5px red;
+}
+
+input:required:valid {
+    border-left: solid 5px green;
+}
+
+input[type="radio"]:required{
+    margin-right: 1rem;
+}
+
+fieldset{
+    border: none;
+}
+
+dialog {
+    margin: auto;
+    border: 1px solid var(--backdrop);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 90%;
+    max-width: 600px;
+}

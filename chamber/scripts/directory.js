@@ -245,3 +245,77 @@ const displaySpotlights = (companies) => {
         spotlights.appendChild(section);
     });
 }
+
+/**Memberships**/
+
+const memberships = [
+    {
+    id: "np",
+    level: "Non Profit",
+    benefit: "nothing",
+    payment: 0
+    },
+    {
+    id: "bronze",
+    level: "Bronze",
+    benefit: "Little",
+    payment: 0
+    },
+    {
+    id: "silver",
+    level: "Silver",
+    benefit: "Little much",
+    payment: 0
+    },
+    {
+    id: "gold",
+    level: "Gold",
+    benefit: "All",
+    payment: 0
+    }
+]
+
+const npBtn = document.querySelector("#btn-np");
+const bronzeBtn = document.querySelector("#btn-bronze");
+const silverBtn = document.querySelector("#btn-silver");
+const goldBtn = document.querySelector("#btn-gold");
+
+const membershipDial = document.querySelector("#dialog-membership")
+
+if (npBtn){
+    npBtn.addEventListener("click", () => {
+        membershipDetails(memberships.find(membership => membership.id == "np"))
+    })
+}
+
+if (bronzeBtn){
+    bronzeBtn.addEventListener("click", () => {
+        membershipDetails(memberships.find(membership => membership.id == "bronze"))
+    })
+}
+
+if (silverBtn){
+    silverBtn.addEventListener("click", () => {
+        membershipDetails(memberships.find(membership => membership.id == "silver"))
+    })
+}
+
+if (goldBtn){
+    goldBtn.addEventListener("click", () => {
+        membershipDetails(memberships.find(membership => membership.id == "gold"))
+    })
+}
+
+function membershipDetails(memberDetails) {
+    membershipDial.innerHTML = `
+    <h1>${memberDetails.level} Membership</h1>
+    <button id="closeModal" aria-label="close">❌</button>
+    
+    `;
+
+    membershipDial.showModal();
+
+    membershipDial.querySelector("#closeModal").addEventListener("click", () => {
+        membershipDial.close();
+    })
+}

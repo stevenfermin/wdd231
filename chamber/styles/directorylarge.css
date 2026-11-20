@@ -244,7 +244,52 @@
         text-align: center;
         padding: 1rem;
     }
+    
+    .org {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 40%);
+    }
 
+    .join {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        grid-column: 1/2;
+    }
+
+    .join fieldset{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0.5rem;
+        align-items: flex-start;
+        padding-right: 2rem;
+    }
+
+    .memberships {
+        grid-column: 2/3;
+        place-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        margin: 2rem 0;
+    }
+
+    .memberships div {
+        background-color: var(--principal-color);
+        width: 80%;
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        color: var(--black);
+        font-weight: 900;
+        font-size: 1.2rem;
+        border-radius: 5px 25px;
+    }
 
     footer {
         background-color: var(--principal-color);

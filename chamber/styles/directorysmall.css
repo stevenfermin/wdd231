@@ -4,6 +4,7 @@
     --current: rgba(247, 146, 84, 0.8);
     --button-color: rgba(255,255,255);
     --black: rgb(0,0,0);
+    --backdrop: rgb(0 0 0 / 10%);
 }
 
 * {
