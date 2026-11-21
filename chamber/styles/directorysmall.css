@@ -346,6 +346,124 @@ main {
 }
 
 
+/********************JOIN PAGE***********************/
+.org {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.join {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 1rem;
+    align-items: center;
+}
+
+.join fieldset{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0.5rem;
+    align-items: flex-start;
+}
+
+textarea {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 150px;
+    max-height: 150px;
+    resize: none;
+    padding: 5px;
+}
+
+
+.join button {
+    max-width: 300px;
+    min-width: 300px;
+    padding: 0.5rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    background-color: var(--principal-color);
+    color: var(--black);
+}
+
+.memberships div {
+        background-color: var(--principal-color);
+        max-width: 400px;
+        min-width: 300px;
+        margin-top: 1rem;
+        height: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        color: var(--black);
+        font-weight: 900;
+        font-size: 1.4rem;
+        border-radius: 5px 25px;
+    }
+
+.memberships button {
+    border: 1px solid var(--black);
+    font-size: large;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+
+#dialog-membership {
+    margin: auto;
+    border: 3px solid var(--principal-color);
+    border-radius: .25rem;
+    padding: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 3rem #777;
+    width: 80%;
+    max-width: 600px;
+}
+
+.dialHead {
+    display: grid;
+    grid-template-columns: auto 44px;
+    width: 100%;
+    border-bottom: 1px dashed var(--black);
+    padding: 1rem;
+}
+
+.benefits{
+    padding: 1rem;
+}
+
+#level-benefits {
+    margin-top: 1rem;
+    margin-left: 2rem;
+}
+
+#h1-thankyou {
+    text-align: center;
+}
+
+.form-results {
+    max-width: 400px;
+    min-width: 250px;
+    margin: 0 auto;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--principal-color);
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    padding: 0.5rem 0.2rem;
+}
+
+.form-results h2 {
+    text-align: center;
+}
+
+
 /*********************FOOTER*************************/
 
 footer {

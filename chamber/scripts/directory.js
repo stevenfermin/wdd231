@@ -333,7 +333,7 @@ function membershipDetails(memberDetails) {
     <p>Benefits include:</p>
     <ul id="level-benefits">
     </ul>
-    <p>Cost: ${memberDetails.payment}</p>
+    <p>Cost: USD$${memberDetails.payment}</p>
     </div>
     `;
     
@@ -376,13 +376,13 @@ const time = myInfo.get('timestamp')
 if (result){
 
     result.innerHTML = `
-    <h2>Congratulations in joining to ChambersDR</h2>
-    <span>Name: ${first}</span>
-    <span>Lastname: ${last}</span>
-    <span>Email: ${email}</span>
-    <span>Phone: ${phone}</span>
-    <span>Business Name: ${business}</span>
-    ${time}
+    <h2>Congratulations in joining to ChambersDR!</h2>
+    <span><strong>Name:</strong> ${first}</span>
+    <span><strong>Lastname:</strong> ${last}</span>
+    <span><strong>Email:</strong> ${email}</span>
+    <span><strong>Phone:</strong> ${phone}</span>
+    <span><strong>Business Name:</strong> ${business}</span>
+    <span><strong>Date Sent:</strong> ${time}</span>
     `;
 }
 
