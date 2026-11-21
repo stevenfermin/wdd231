@@ -287,8 +287,27 @@
         justify-content: space-around;
         color: var(--black);
         font-weight: 900;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         border-radius: 5px 25px;
+    }
+
+    .memberships button {
+        border: 1px solid var(--black);
+        font-size: large;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+        padding: 0.2rem;
+    }
+
+    #dialog-membership {
+        display: flex;
+    }
+
+    .dialHead {
+        display: grid;
+        grid-template-columns: auto 44px;
+        width: 100%;
+        border-bottom: 1px dashed var(--black);
     }
 
     footer {

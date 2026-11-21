@@ -308,8 +308,10 @@ if (goldBtn){
 
 function membershipDetails(memberDetails) {
     membershipDial.innerHTML = `
-    <h1>${memberDetails.level} Membership</h1>
-    <button id="closeModal" aria-label="close">❌</button>
+    <div class="dialHead">
+        <h1>${memberDetails.level} Membership</h1>
+        <button id="closeModal" aria-label="close">❌</button>
+    </div>
     
     `;
 
