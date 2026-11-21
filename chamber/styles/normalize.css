@@ -25,5 +25,12 @@ legend {
 }
 
 .memberships {
-    transition: 5s ease-in;
+    transform: translateY(10%);
+    animation: getIn 1s ease running forwards;
+    opacity: 0;
+    
+}
+
+@keyframes getIn {
+    100% {opacity: 1; transform: translateY(0%); }
 }
