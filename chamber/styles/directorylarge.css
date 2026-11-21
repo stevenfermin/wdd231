@@ -324,6 +324,11 @@
         padding: 1rem;
     }
 
+    #level-benefits {
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
     footer {
         background-color: var(--principal-color);
         display: flex;

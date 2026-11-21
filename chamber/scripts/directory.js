@@ -252,7 +252,7 @@ const memberships = [
     {
     id: "np",
     level: "Non Profit",
-    benefit: ["Standard listing in the online Business Directory", 
+    benefits: ["Standard listing in the online Business Directory", 
         "Access to monthly community networking mixers", 
         "Eligibility to post community events on the Chamber calendar", 
         "Monthly digital Chamber newsletter subscription"],
@@ -261,7 +261,7 @@ const memberships = [
     {
     id: "bronze",
     level: "Bronze",
-    benefit: ["Everything in Non-Profit", 
+    benefits: ["Everything in Non-Profit", 
         "Enhanced directory listing with logo, website link, and social handles",
         "Member-to-member discount program access",
         "Official 'Chamber Member' digital badge & window decal",
@@ -271,7 +271,7 @@ const memberships = [
     {
     id: "silver",
     level: "Silver",
-    benefit: ["Everything in Bronze",
+    benefits: ["Everything in Bronze",
         "Priority placement in directory search results",
         "2 complimentary tickets to annual networking events & luncheons",
         "Quarterly social media spotlight feature across Chamber channels",
@@ -282,7 +282,7 @@ const memberships = [
     {
     id: "gold",
     level: "Gold",
-    benefit: ["Everything in Silver",
+    benefits: ["Everything in Silver",
         "Homepage 'Company Spotlight' rotation on the Chamber website",
         "Featured banner ad in the monthly Chamber newsletter",
         "VIP seating and 4 complimentary passes to the Annual Gala & major summits",
@@ -331,10 +331,18 @@ function membershipDetails(memberDetails) {
     </div>
     <div class="benefits">
     <p>Benefits include:</p>
-    <ul>
+    <ul id="level-benefits">
     <ul>
     </div>
     `;
+    
+    const ul = document.querySelector("#level-benefits")
+    
+    memberDetails.benefits.forEach((benefit) => {
+        const li =  document.createElement("li")
+        li.textContent = benefit;
+        ul.appendChild(li);
+    })
 
     membershipDial.showModal();
 
