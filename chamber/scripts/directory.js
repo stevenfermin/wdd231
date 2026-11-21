@@ -319,3 +319,12 @@ function membershipDetails(memberDetails) {
         membershipDial.close();
     })
 }
+
+const result =  document.querySelector("#form-results");
+
+if (result){
+    const h1 = document.createElement("h1")
+    h1.innerHTML = `El diañe mi loco`;
+
+    result.appendChild(h1);
+}
