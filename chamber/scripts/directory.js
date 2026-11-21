@@ -266,7 +266,7 @@ const memberships = [
         "Member-to-member discount program access",
         "Official 'Chamber Member' digital badge & window decal",
         "Discounted admission to workshops and seminars"],
-    payment: 0
+    payment: 300
     },
     {
     id: "silver",
@@ -277,7 +277,7 @@ const memberships = [
         "Quarterly social media spotlight feature across Chamber channels",
         "Free access to business training workshops and webinars",
         "Ability to post job openings on the Chamber job board"],
-    payment: 0
+    payment: 550
     },
     {
     id: "gold",
@@ -288,7 +288,7 @@ const memberships = [
         "VIP seating and 4 complimentary passes to the Annual Gala & major summits",
         "Complimentary ribbon-cutting ceremony & press release promotion",
         "Invitation to executive roundtables and policy committees"],
-    payment: 0
+    payment: 1000
     }
 ]
 
@@ -332,7 +332,8 @@ function membershipDetails(memberDetails) {
     <div class="benefits">
     <p>Benefits include:</p>
     <ul id="level-benefits">
-    <ul>
+    </ul>
+    <p>Cost: ${memberDetails.payment}</p>
     </div>
     `;
     
@@ -352,14 +353,36 @@ function membershipDetails(memberDetails) {
 }
 
 const result =  document.querySelector("#form-results");
+const getURL = window.location.search;
+const timestamp = document.querySelector("#timestamp");
+const joinForm = document.querySelector(".join");
+const myInfo = new URLSearchParams(getURL)
 
-if (result){
-    const h1 = document.createElement("h1")
-    h1.innerHTML = `El diañe mi loco`;
-
-    result.appendChild(h1);
+if (joinForm){
+    joinForm.addEventListener("submit", () => {
+        timestamp.value = new Date().toLocaleString();
+    })
 }
 
-const getURL = window.location.search;
 
-const myInfo = new URLSearchParams(getURL)
+
+const first = myInfo.get('first');
+const last = myInfo.get('last');
+const email = myInfo.get('email');
+const phone = myInfo.get('phone');
+const business = myInfo.get('organization');
+const time = myInfo.get('timestamp')
+
+if (result){
+
+    result.innerHTML = `
+    <h2>Congratulations in joining to ChambersDR</h2>
+    <span>Name: ${first}</span>
+    <span>Lastname: ${last}</span>
+    <span>Email: ${email}</span>
+    <span>Phone: ${phone}</span>
+    <span>Business Name: ${business}</span>
+    ${time}
+    `;
+}
+
