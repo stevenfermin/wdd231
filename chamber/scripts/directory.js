@@ -330,3 +330,7 @@ if (result){
 
     result.appendChild(h1);
 }
+
+const getURL = window.location.search;
+
+const myInfo = new URLSearchParams(getURL)
