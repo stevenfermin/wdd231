@@ -308,8 +308,6 @@
         box-shadow: 0 0 3rem #777;
         width: 80%;
         max-width: 600px;
-        display: flex;
-        flex-direction: column;
     }
 
     .dialHead {
