@@ -300,7 +300,16 @@
     }
 
     #dialog-membership {
+        margin: auto;
+        border: 1px solid var(--backdrop);
+        border-radius: .25rem;
+        padding: 1rem;
+        background-color: #fff;
+        box-shadow: 0 0 3rem #777;
+        width: 80%;
+        max-width: 600px;
         display: flex;
+        flex-direction: column;
     }
 
     .dialHead {
@@ -308,6 +317,11 @@
         grid-template-columns: auto 44px;
         width: 100%;
         border-bottom: 1px dashed var(--black);
+        padding: 1rem;
+    }
+
+    .benefits{
+        padding: 1rem;
     }
 
     footer {

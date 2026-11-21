@@ -252,25 +252,42 @@ const memberships = [
     {
     id: "np",
     level: "Non Profit",
-    benefit: "nothing",
+    benefit: ["Standard listing in the online Business Directory", 
+        "Access to monthly community networking mixers", 
+        "Eligibility to post community events on the Chamber calendar", 
+        "Monthly digital Chamber newsletter subscription"],
     payment: 0
     },
     {
     id: "bronze",
     level: "Bronze",
-    benefit: "Little",
+    benefit: ["Everything in Non-Profit", 
+        "Enhanced directory listing with logo, website link, and social handles",
+        "Member-to-member discount program access",
+        "Official 'Chamber Member' digital badge & window decal",
+        "Discounted admission to workshops and seminars"],
     payment: 0
     },
     {
     id: "silver",
     level: "Silver",
-    benefit: "Little much",
+    benefit: ["Everything in Bronze",
+        "Priority placement in directory search results",
+        "2 complimentary tickets to annual networking events & luncheons",
+        "Quarterly social media spotlight feature across Chamber channels",
+        "Free access to business training workshops and webinars",
+        "Ability to post job openings on the Chamber job board"],
     payment: 0
     },
     {
     id: "gold",
     level: "Gold",
-    benefit: "All",
+    benefit: ["Everything in Silver",
+        "Homepage 'Company Spotlight' rotation on the Chamber website",
+        "Featured banner ad in the monthly Chamber newsletter",
+        "VIP seating and 4 complimentary passes to the Annual Gala & major summits",
+        "Complimentary ribbon-cutting ceremony & press release promotion",
+        "Invitation to executive roundtables and policy committees"],
     payment: 0
     }
 ]
@@ -312,7 +329,11 @@ function membershipDetails(memberDetails) {
         <h1>${memberDetails.level} Membership</h1>
         <button id="closeModal" aria-label="close">❌</button>
     </div>
-    
+    <div class="benefits">
+    <p>Benefits include:</p>
+    <ul>
+    <ul>
+    </div>
     `;
 
     membershipDial.showModal();
