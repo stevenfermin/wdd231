@@ -462,7 +462,27 @@ textarea {
 .form-results h2 {
     text-align: center;
 }
+/*********************DISCOVER*************************/
 
+.place {
+        background-color: var(--principal-color);
+        border-radius: 15px;
+        margin: 1rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+        "name"
+        "photo"
+        "description"
+        "address"
+        "button"
+        ;
+        opacity: 0;
+        animation: show ease-in 0.8s forwards;
+        place-items: center;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
 
 /*********************FOOTER*************************/
 

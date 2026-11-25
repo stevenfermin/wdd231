@@ -390,7 +390,6 @@ if (result){
 /*************DISCOVER PAGE***********/
 
 import { turism } from "../data/discover.mjs";
-console.log(turism);
 
 const turismCards = document.querySelector("#TurismCards");
 
@@ -428,14 +427,17 @@ function displayTurismCards (data){
 const countVisits = document.getElementById("visits");
 let numberVisits = Number(window.localStorage.getItem("visits-ls")) || 0;
 
-if (numberVisits === 0) {
-	countVisits.innerHTML = `This is your first visit. 🥳 Welcome!`;
-} else if (numberVisits < 7 ){
-	countVisits.innerHTML = `Welcome again! Awesome!`;
-} else {
-    countVisits.innerHTML = `Thanks for comming ${numberVisits} times!`;
+if (countVisits){
+    if (numberVisits === 0) {
+        countVisits.innerHTML = `This is your first visit. 🥳 Welcome!`;
+    } else if (numberVisits < 7 ){
+        countVisits.innerHTML = `Welcome again! Awesome!`;
+    } else {
+        countVisits.innerHTML = `Thanks for comming ${numberVisits} times!`;
+    }
+
+    numberVisits++;
+
+    localStorage.setItem("visits-ls", numberVisits);
+
 }
-
-numberVisits++;
-
-localStorage.setItem("visits-ls", numberVisits);

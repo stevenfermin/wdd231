@@ -1,0 +1,21 @@
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+
+    .place {
+        background-color: var(--principal-color);
+        border-radius: 15px;
+        margin: 1rem;
+        display: grid;
+        gap: 1rem;
+        grid-template-areas: 
+        "name name"
+        "photo description"
+        "photo address"
+        "button button"
+        ;
+        opacity: 0;
+        animation: show ease-in 0.8s forwards;
+        place-items: initial;
+        text-align: initial;
+        padding: 0 0.5rem;
+    }
+}
