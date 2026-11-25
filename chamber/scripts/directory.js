@@ -386,3 +386,56 @@ if (result){
     `;
 }
 
+
+/*************DISCOVER PAGE***********/
+
+import { turism } from "../data/discover.mjs";
+console.log(turism);
+
+const turismCards = document.querySelector("#TurismCards");
+
+if (turismCards){
+    displayTurismCards(turism)
+}
+
+function displayTurismCards (data){
+    data.forEach((place) =>{
+        const section = document.createElement("section");
+        const h2 = document.createElement("h2");
+        const img = document.createElement("img");
+        const address = document.createElement("span");
+        const description = document.createElement("p");
+        const Learnbtn = document.createElement("button");
+
+        section.classList = "place";
+        h2.textContent = place.title;
+        img.src = place.image_url;
+        address.textContent = place.address;
+        description.textContent = place.description;
+        Learnbtn.textContent = "Learn More";
+
+        section.appendChild(h2);
+        section.appendChild(img);
+        section.append(address);
+        section.appendChild(description);
+        section.appendChild(Learnbtn);
+
+        turismCards.appendChild(section);
+    })
+}
+
+/**Visits**/
+const countVisits = document.getElementById("visits");
+let numberVisits = Number(window.localStorage.getItem("visits-ls")) || 0;
+
+if (numberVisits === 0) {
+	countVisits.innerHTML = `This is your first visit. 🥳 Welcome!`;
+} else if (numberVisits < 7 ){
+	countVisits.innerHTML = `Welcome again! Awesome!`;
+} else {
+    countVisits.innerHTML = `Thanks for comming ${numberVisits} times!`;
+}
+
+numberVisits++;
+
+localStorage.setItem("visits-ls", numberVisits);
