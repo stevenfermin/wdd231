@@ -52,11 +52,25 @@ legend {
     border: 1px solid var(--black);
 }
 
-.place img {
+    .place img {
         width: 300px;
         height: 200px;
         grid-area: photo;
         object-fit: cover;
+    }
+
+    .place img:hover {
+        animation: turn 2s;
+    }
+
+    @keyframes turn {
+        0% {
+            transform: rotate(0deg)
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
     }
 
     .place h2 {
