@@ -376,10 +376,10 @@
         display: grid;
         gap: 1rem;
         grid-template-areas: 
-        "photo name"
+        "name name"
         "photo description"
         "photo address"
-        "photo button"
+        "button button"
         ;
         opacity: 0;
         animation: show ease-in 0.8s forwards;
