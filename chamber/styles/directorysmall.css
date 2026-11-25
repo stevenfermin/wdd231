@@ -96,7 +96,7 @@
     color: black;
 }
 
-#mobilecurrent {
+.mobilecurrent {
     background-color: var(--current);
 }
 

@@ -403,3 +403,16 @@ if (countVisits){
     localStorage.setItem("visits-ls", numberVisits);
 
 }
+
+/**WAYFINDING**/
+
+const navLinks = document.querySelectorAll(".link a");
+
+const page = window.location.href.split("/").pop() || "index.html";
+
+navLinks.forEach(link => {
+    if (link.getAttribute("href") === page) {
+
+        link.parentElement.classList.add("current");
+    }
+});

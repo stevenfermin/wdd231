@@ -29,11 +29,11 @@
         display: none;
     }
 
-    #current {
+    .current {
         background-color: transparent;
     }
 
-    #current a {
+    .current a {
         color: #000;
         border-bottom: solid 1px #000;
     }
