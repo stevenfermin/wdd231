@@ -252,7 +252,7 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
-    #h1-join {
+    #h1-join, #discover {
         margin: 0 1rem;
     }
 
