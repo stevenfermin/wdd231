@@ -19,6 +19,7 @@ function displayTurismCards (data){
         h2.textContent = place.title;
         img.src = place.image_url;
         img.alt = place.image_url;
+        img.loading = "lazy";
         address.textContent = place.address;
         description.textContent = place.description;
         Learnbtn.textContent = "Learn More";
