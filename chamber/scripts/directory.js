@@ -416,3 +416,12 @@ navLinks.forEach(link => {
         link.parentElement.classList.add("current");
     }
 });
+
+const mobilenavLinks = document.querySelectorAll(".mobileLink a");
+
+mobilenavLinks.forEach(link => {
+    if (link.getAttribute("href") === page) {
+
+        link.parentElement.classList.add("mobilecurrent");
+    }
+});
