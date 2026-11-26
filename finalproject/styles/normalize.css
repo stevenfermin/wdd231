@@ -1,0 +1,20 @@
+:root {
+    --main-color: #0141c1;
+    --font-main-color: rgb(255,255,255);
+    --secondary-color: rgb(0,0,0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--main-color);
+    color: var(--font-main-color);
+}
+
+.current a {
+    border-bottom: 1px solid var(--font-main-color);
+}

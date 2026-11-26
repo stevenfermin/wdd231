@@ -1,0 +1,110 @@
+@media (min-width: 1024px) {
+    .nav {
+        display: grid;
+        grid-template-columns: 50px auto auto;
+        padding: 1rem;
+        align-items: center;
+    }
+    .nav h1 {
+        margin-left: 0.5rem;
+    }
+
+    .nav img {
+        width: 100%;
+    }
+
+    .nav ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .nav li {
+        transition: 0.2s ease;
+    }
+
+    .nav a {
+        padding: 0.5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: var(--font-main-color);
+    }
+
+    .nav li:hover {
+        transform: scale(1.20);
+    }
+
+    .nav li:hover a {
+        background-color: var(--font-main-color);
+        color: var(--main-color);
+        border-radius: 25px;
+        border-bottom: none;
+    }
+
+    .hero {
+        position: relative;
+        width: 100%;
+        height: 30rem;
+    }
+
+    .hero img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30rem;
+        object-fit: cover;
+        filter: brightness(0.7);
+    }
+
+    .hero-content {
+        position: absolute;
+        top: 5rem;
+        left: 35rem;
+    }
+
+    .hero-content h1 {
+        color: white;
+        font-size: 3rem;
+        text-shadow: 2px 2px #000000;
+    }
+
+    .content {
+        place-items: center;
+    }
+
+    .content section {
+        background-color: var(--main-color);
+        width: 40%;
+        text-align: center;
+        color: var(--font-main-color);
+        margin: 1rem;
+        border-radius: 25px;
+        padding: 0.3rem;
+    }
+
+    .content h2 {
+        border-bottom: 1px solid var(--font-main-color);
+        font-weight: 900;
+        font-size: 2.5rem;
+    }
+
+    .content p {
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+
+    .content button {
+        background-color: var(--font-main-color);
+        border-radius: 25px;
+        border: none;
+        padding: 0.5rem 1rem;
+        font-size: 1.3rem;
+    }
+
+    .content button:hover {
+        background-color: var(--secondary-color);
+        color: var(--font-main-color);
+    }
+    
+}
